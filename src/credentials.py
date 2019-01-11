@@ -4,6 +4,7 @@ from config import CONFIG
 
 
 class credential_helper:
+    @staticmethod
     def create_new_session():
         return boto3.Session(
         aws_access_key_id = CONFIG['client_id'],
